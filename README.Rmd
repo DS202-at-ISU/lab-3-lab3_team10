@@ -50,8 +50,6 @@ library(dplyr)
 deaths <- av %>% pivot_longer(cols = c("Return1", "Return2", "Return3", "Return4", "Return5"),  
                               names_to = "Time", values_to = "Return")
 
-deaths$Time <- parse_number(deaths$Time)
-
 View(deaths)
 ```
 
