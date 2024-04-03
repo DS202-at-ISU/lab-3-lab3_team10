@@ -55,8 +55,13 @@ deaths = subset(deaths, select = -c(Return1, Return2, Return3, Return4, Return5)
 Based on these datasets calculate the average number of deaths an Avenger suffers. 
 
 ```{r}
-
+numDeaths = length(which(deaths$Death=="YES"))
+numAvengers = length(unique(deaths$Name.Alias))
+averageDeaths = numDeaths / numAvengers
+averageDeaths
 ```
+
+The average number of deaths an avenger suffers is 0.546 deaths.
 
 ## Individually
 
