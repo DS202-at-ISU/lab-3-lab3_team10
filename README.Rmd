@@ -127,3 +127,28 @@ numTime23Returns / numTime23Deaths
 ```
 
 Doing the analysis shows that avengers have an exactly 2 in 3 chance to come back after their first death and similarly an exactly 1 in 2 chance to come back after their second or third death.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Group member 3: 
+
+> "Quote"
+
+```{r}
+
+```
+
+Analysis
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Group member 4: 
+
+> "Quote"
+
+```{r}
+
+```
+
+Analysis
+
