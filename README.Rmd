@@ -148,12 +148,18 @@ That statement has been fact checked, out of 173 listed avengers, 69 had died at
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 Group member 4: 
-
-> "Quote"
+> "I counted 89 total deaths — some unlucky Avengers7 are basically Meat Loaf with an E-ZPass — and on 57 occasions the individual made a comeback."
+> "Number of Deaths and Returns"
 
 ```{r}
+# Calculate the total number of deaths and returns
+totalDeaths <- sum(deaths$Death == "YES")
+totalReturns <- sum(deaths$Return == "YES")
+
+totalDeaths
+totalReturns
+
 
 ```
 
-Analysis
-
+According to the analysis, there were 89 deaths among the Avengers, and 57 of those deaths resulted in the person's return. This suggests that among the Avengers, there were more deaths than returns.
