@@ -129,16 +129,21 @@ numTime23Returns / numTime23Deaths
 Doing the analysis shows that avengers have an exactly 2 in 3 chance to come back after their first death and similarly an exactly 1 in 2 chance to come back after their second or third death.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
+ 
+Mohamed Bashier:
 
-Group member 3: 
-
-> "Quote"
+> "Out of 173 listed Avengers, my analysis found that 69 had died at least one time after they joined the team."
 
 ```{r}
+avengers <- av %>%
+  mutate(Total_Deaths = rowSums(select(., starts_with("Death")) == "YES"))
+
+died_at_least_once <- sum(avengers$Total_Deaths > 0)
+
+died_at_least_once
 
 ```
-
-Analysis
+That statement has been fact checked, out of 173 listed avengers, 69 had died at least one time after they joined the team. 
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
